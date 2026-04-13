@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Club dell'Audiolibro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header .logo-img {
+				width: auto;
+				max-width: 500px;
+				height: auto;
+				display: block;
+				margin: 0 auto 0 auto;
+			}
+			#header p {
+				margin-top: 0;
+				padding-top: 0;
+				/* FONT SIZE catchphrase: modifica il valore sotto */
+				font-size: 1.55em;
+				/* FADE-IN catchphrase: "1s" = durata del fade, "3.5s" = ritardo prima che appaia */
+				opacity: 0;
+				animation: catchphrase-fadein 1s 3.5s forwards;
+				-webkit-animation: catchphrase-fadein 1s 3.5s forwards;
+			}
+			@keyframes catchphrase-fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-webkit-keyframes catchphrase-fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<img src="assets/Logo_2.svg" alt="Club dell'Audiolibro" class="logo-img" />
+						<p>Il punto d'incontro per chi ama ascoltare</p>
+						<nav>
+							<ul>
+								<li><a href="https://www.instagram.com/clubaudiolibro/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="mailto:info@clubaudiolibro.it" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/@clubdellaudiolibro" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+								<li><a href="https://web.telegram.org/k/#-3844595399" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="https://www.linkedin.com/company/club-dell-audiolibro/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright"> Made with love in 2026. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
