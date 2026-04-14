@@ -9,6 +9,7 @@
 		<title>Club dell'Audiolibro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
@@ -19,6 +20,14 @@
 				display: block;
 				margin: 0 auto 0 auto;
 			}
+			/* Desktop: mostra Logo_2, nascondi Logo_Mobile */
+			#header .logo-desktop { display: block; }
+			#header .logo-mobile  { display: none;  }
+			/* Mobile: nascondi Logo_2, mostra Logo_Mobile */
+			@media screen and (max-width: 736px) {
+				#header .logo-desktop { display: none;  }
+				#header .logo-mobile  { display: block; }
+			}
 			#header p {
 				margin-top: 0;
 				padding-top: 0;
@@ -28,6 +37,8 @@
 				opacity: 0;
 				animation: catchphrase-fadein 1s 3.5s forwards;
 				-webkit-animation: catchphrase-fadein 1s 3.5s forwards;
+				/* Shadow catchphrase */
+				text-shadow: 0 2px 8px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.5);
 			}
 			@keyframes catchphrase-fadein {
 				from { opacity: 0; }
@@ -36,6 +47,10 @@
 			@-webkit-keyframes catchphrase-fadein {
 				from { opacity: 0; }
 				to   { opacity: 1; }
+			}
+			/* Shadow icone social */
+			#header nav ul li a {
+				filter: drop-shadow(0 2px 6px rgba(0,0,0,0.65));
 			}
 		</style>
 	</head>
@@ -47,14 +62,15 @@
 
 				<!-- Header -->
 					<header id="header">
-						<img src="assets/Logo_2.svg" alt="Club dell'Audiolibro" class="logo-img" />
-						<p>Il punto d'incontro per chi ama ascoltare</p>
+						<img src="assets/Logo_2.svg"      alt="Club dell'Audiolibro" class="logo-img logo-desktop" />
+						<img src="assets/Logo_Mobile.svg" alt="Club dell'Audiolibro" class="logo-img logo-mobile" />
+						<p>Il punto di ritrovo di chi ama ascoltare</p>
 						<nav>
 							<ul>
 								<li><a href="https://www.instagram.com/clubaudiolibro/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="mailto:info@clubaudiolibro.it" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								<li><a href="https://www.youtube.com/@clubdellaudiolibro" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-								<li><a href="https://web.telegram.org/k/#-3844595399" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="https://t.me/+ej1zB0dDgyE2NWJk" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
 								<li><a href="https://www.linkedin.com/company/club-dell-audiolibro/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 						</nav>
