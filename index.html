@@ -4,8 +4,17 @@
 <meta charset="utf-8" />
 <title>Club dell'Audiolibro — Il punto di ritrovo per chi ama ascoltare</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Club dell'Audiolibro è la community italiana dedicata agli audiolibri. Lo spazio dove l'audiolibro si ascolta, si ama e si racconta." />
+<meta name="description" content="Il Club dell'Audiolibro è la community italiana dedicata agli audiolibri. Lo spazio dove l'audiolibro si ascolta, si ama e si racconta." />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7YVVNLX0J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G7YVVNLX0J');
+</script>
 
 <!-- Fonts: DM Serif Display (display) + Manrope (body) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -536,6 +545,7 @@
     flex-direction: column;
     gap: 0.7rem;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
   }
   .support-card:hover {
     transform: translateY(-3px);
@@ -603,7 +613,6 @@
 
   .support-donate {
     margin-top: 0.9rem;
-    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -611,6 +620,7 @@
     background: var(--teal-bright);
     color: var(--ink);
     border-radius: 999px;
+    font-family: var(--sans);
     font-weight: 600;
     font-size: 0.9rem;
     width: fit-content;
@@ -791,11 +801,12 @@
   <div class="nav-links">
     <a href="#chi-siamo">Chi siamo</a>
     <a href="#cosa-trovi">Cosa trovi</a>
-    <a href="#dove-ci-trovi">Dove ci trovi</a>
+    <a href="#dove-ci-trovi">Dove siamo</a>
     <a href="#supportaci">Come sostenerci</a>
   </div>
 
-  <a href="https://ko-fi.com/clubaudiolibro" target="_blank" rel="noopener" class="nav-cta">
+  <a href="https://ko-fi.com/clubaudiolibro" target="_blank" rel="noopener" class="nav-cta"
+     data-track="donation_click" data-location="nav">
     Supportaci
   </a>
 </nav>
@@ -855,7 +866,8 @@
     </svg>
 
     <div class="cta-row">
-      <a href="https://www.instagram.com/clubaudiolibro/" target="_blank" rel="noopener" class="cta-primary">
+      <a href="https://www.instagram.com/clubaudiolibro/" target="_blank" rel="noopener" class="cta-primary"
+         data-track="instagram_follow" data-location="hero">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.64.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.64.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.22 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.78 2.2 12 2.2zm0 1.8c-3.16 0-3.53.01-4.77.07-1.07.05-1.65.23-2.04.38-.51.2-.88.44-1.27.83-.39.39-.63.76-.83 1.27-.15.39-.33.97-.38 2.04C2.65 9.83 2.64 10.2 2.64 13.36s.01 3.53.07 4.77c.05 1.07.23 1.65.38 2.04.2.51.44.88.83 1.27.39.39.76.63 1.27.83.39.15.97.33 2.04.38 1.24.06 1.61.07 4.77.07s3.53-.01 4.77-.07c1.07-.05 1.65-.23 2.04-.38.51-.2.88-.44 1.27-.83.39-.39.63-.76.83-1.27.15-.39.33-.97.38-2.04.06-1.24.07-1.61.07-4.77s-.01-3.53-.07-4.77c-.05-1.07-.23-1.65-.38-2.04-.2-.51-.44-.88-.83-1.27-.39-.39-.76-.63-1.27-.83-.39-.15-.97-.33-2.04-.38C15.53 4.01 15.16 4 12 4zM12 7.4a4.6 4.6 0 110 9.2 4.6 4.6 0 010-9.2zm0 1.8a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6zm5.85-2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg>
         Seguici su Instagram
       </a>
@@ -876,7 +888,7 @@
         <span class="section-eyebrow">Chi siamo</span>
         <h2 class="section-title">Un progetto nato dalla passione per <em>l'ascolto</em></h2>
         <p class="section-body">
-          Il Club dell'Audiolibro nasce nel 2026 per essere il punto di riferimento italiano sul mondo degli audiolibri. Recensioni, consigli d'ascolto, notizie e curiosità su tutto ciò che ruota attorno al mezzo, con la passione e la voglia di condividerla.
+          Il Club dell'Audiolibro nasce nel 2026 per essere il punto di riferimento italiano sul mondo degli audiolibri. Recensioni, consigli d'ascolto, notizie e curiosità su tutto ciò che ruota attorno all'ascolto letterario, con la passione e la voglia di condividerla.
         </p>
         <p class="section-body" style="margin-top: 1rem;">
           Che tu sia un ascoltatore di lunga data o stia muovendo i primi passi, sei nel posto giusto. Benvenuto nel club.
@@ -943,7 +955,8 @@
     </div>
 
     <div class="cards-grid">
-      <article class="card reveal">
+      <article class="card reveal" style="cursor:pointer;"
+               onclick="trackAndOpen('instagram_follow','card_contenuti','https://www.instagram.com/clubaudiolibro/')">
         
         <div class="card-icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:44px;height:44px;display:block">
@@ -977,7 +990,8 @@
         </p>
       </article>
 
-      <article class="card reveal">
+      <article class="card reveal" style="cursor:pointer;"
+               onclick="trackAndOpen('telegram_join','card_community','https://t.me/+ej1zB0dDgyE2NWJk')">
         
         <div class="card-icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:44px;height:44px;display:block">
@@ -989,7 +1003,7 @@
         </div>
         <h3 class="card-title">Community</h3>
         <p class="card-body">
-          Una community dove si parla di audiolibri senza filtri: consigli, opinioni, scoperte condivise. Un club aperto, che ascolta davvero, nel senso più letterale.
+          Una community dove parlare di audiolibri senza filtri: consigli, opinioni, scoperte condivise. Un club aperto, che ascolta davvero, nel senso più letterale.
         </p>
       </article>
     </div>
@@ -1002,7 +1016,7 @@
 <section id="dove-ci-trovi" class="block">
   <div class="section-inner">
     <div class="head">
-      <span class="section-eyebrow reveal">Dove ci trovi</span>
+      <span class="section-eyebrow reveal">Dove siamo</span>
       <h2 class="section-title reveal">Raggiungici sulle tue piattaforme <em>preferite</em></h2>
       <p class="section-body reveal">
         Ogni canale ha la sua voce. Scegli quello che fa per te… o seguici ovunque.
@@ -1010,7 +1024,8 @@
     </div>
 
     <div class="platforms-grid">
-      <a href="https://www.instagram.com/clubaudiolibro/" target="_blank" rel="noopener" class="platform-link reveal">
+      <a href="https://www.instagram.com/clubaudiolibro/" target="_blank" rel="noopener" class="platform-link reveal"
+         data-track="instagram_follow" data-location="platform_grid">
         <span class="platform-icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.64.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.64.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.22 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.78 2.2 12 2.2zm0 3.4a6.4 6.4 0 100 12.8 6.4 6.4 0 000-12.8zm0 2a4.4 4.4 0 110 8.8 4.4 4.4 0 010-8.8zm6.5-2.7a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/></svg>
         </span>
@@ -1021,7 +1036,8 @@
         <span class="platform-arrow">→</span>
       </a>
 
-      <a href="https://t.me/+ej1zB0dDgyE2NWJk" target="_blank" rel="noopener" class="platform-link reveal">
+      <a href="https://t.me/+ej1zB0dDgyE2NWJk" target="_blank" rel="noopener" class="platform-link reveal"
+         data-track="telegram_join" data-location="platform_grid">
         <span class="platform-icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 16.7l-.4 4.3c.6 0 .85-.25 1.16-.55l2.78-2.66 5.77 4.22c1.06.58 1.81.27 2.1-.98l3.8-17.85c.34-1.55-.55-2.16-1.58-1.78L1.78 9.83c-1.5.6-1.5 1.42-.27 1.8l5.27 1.65L19.05 5.6c.58-.36 1.1-.16.67.2L9.04 16.7z"/></svg>
         </span>
@@ -1032,7 +1048,8 @@
         <span class="platform-arrow">→</span>
       </a>
 
-      <a href="https://www.linkedin.com/company/club-dell-audiolibro/" target="_blank" rel="noopener" class="platform-link reveal">
+      <a href="https://www.linkedin.com/company/club-dell-audiolibro/" target="_blank" rel="noopener" class="platform-link reveal"
+         data-track="external_link" data-location="platform_grid" data-label="linkedin">
         <span class="platform-icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
         </span>
@@ -1043,7 +1060,8 @@
         <span class="platform-arrow">→</span>
       </a>
 
-      <a href="mailto:info@clubaudiolibro.it" class="platform-link reveal">
+      <a href="mailto:info@clubaudiolibro.it" class="platform-link reveal"
+         data-track="email_contact" data-location="platform_grid">
         <span class="platform-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
         </span>
@@ -1079,12 +1097,32 @@
         <h3 class="support-title">Seguici</h3>
         <p class="support-body">Seguici sui canali che preferisci. È il modo più efficace per starci vicino.</p>
       </a>
-      <div class="support-card">
+      <div class="support-card" id="share-card">
         <div class="support-icon">
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="11" r="3"/><circle cx="23" cy="21" r="3"/><circle cx="23" cy="6" r="3"/><path d="M11.5 12.5 L20.5 19.5"/><path d="M20.5 7.5 L11.5 9.5"/></svg>
         </div>
         <h3 class="support-title">Condividi</h3>
-        <p class="support-body">Parla del Club a chi ama leggere con le orecchie. Il passaparola vale tutto.</p>
+        <p class="support-body">Se conosci qualcuno che ama ascoltare, parlagli del Club. Il passaparola vale tutto.</p>
+        <button onclick="handleShare()" class="support-donate" style="border:none;cursor:pointer;">
+          Parla di noi →
+        </button>
+
+        <!-- Desktop share popover -->
+        <div id="share-popover" style="display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--bg-card);border:1px solid var(--rule);border-radius:14px;padding:0.9rem 1rem;box-shadow:0 12px 32px rgba(0,0,0,0.12);z-index:100;min-width:200px;text-align:left;">
+          <p style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:0.7rem;font-weight:600;">Condividi tramite</p>
+          <a href="https://www.instagram.com/clubaudiolibro/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:0.6rem;padding:0.45rem 0;font-size:0.9rem;color:var(--ink);font-weight:500;border-bottom:1px solid var(--rule);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.64.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.64.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.22 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.78 2.2 12 2.2zm0 3.4a6.4 6.4 0 100 12.8 6.4 6.4 0 000-12.8zm0 2a4.4 4.4 0 110 8.8 4.4 4.4 0 010-8.8zm6.5-2.7a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.linkedin.com/company/club-dell-audiolibro/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:0.6rem;padding:0.45rem 0;font-size:0.9rem;color:var(--ink);font-weight:500;border-bottom:1px solid var(--rule);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://clubaudiolibro.it" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:0.6rem;padding:0.45rem 0;font-size:0.9rem;color:var(--ink);font-weight:500;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            Sito web
+          </a>
+        </div>
       </div>
       <div class="support-card support-card-highlight">
         <div class="support-icon">
@@ -1092,7 +1130,8 @@
         </div>
         <h3 class="support-title">Dona <span class="support-tag">Opzionale</span></h3>
         <p class="support-body">Se vuoi offrirci un caffè e sostenere il progetto. Mai obbligatorio, sempre apprezzato.</p>
-        <a href="https://ko-fi.com/clubaudiolibro" target="_blank" rel="noopener" class="support-donate">
+        <a href="https://ko-fi.com/clubaudiolibro" target="_blank" rel="noopener" class="support-donate"
+           data-track="donation_click" data-location="support_section">
           Fai una donazione →
         </a>
       </div>
@@ -1114,7 +1153,7 @@
 
   <div class="footer-meta">
     <span>Club dell'Audiolibro</span>
-    <a href="mailto:info@clubaudiolibro.it">info@clubaudiolibro.it</a>
+    <a href="mailto:info@clubaudiolibro.it" data-track="email_contact" data-location="footer">info@clubaudiolibro.it</a>
     <span>Crafted with love by AG, in 2026</span>
   </div>
 </footer>
@@ -1122,7 +1161,7 @@
 <!-- Tweaks panel removed per user request -->
 
 <script>
-  // Scroll reveal w/ stagger
+  // ── Scroll reveal w/ stagger ──
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -1136,11 +1175,111 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach(el => io.observe(el));
 
-  // Nav scroll state
+  // ── Nav scroll state ──
   const nav = document.getElementById('nav');
   const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 24);
   updateNav();
   window.addEventListener('scroll', updateNav, { passive: true });
+
+  // ════════════════════════════════
+  //  GOOGLE ANALYTICS — EVENT TRACKING
+  // ════════════════════════════════
+
+  // Conversion events: these are the event names to mark as conversions in GA4
+  const CONVERSION_EVENTS = ['instagram_follow', 'donation_click', 'telegram_join', 'email_contact'];
+
+  // Helper: fire a GA4 event
+  function track(eventName, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', eventName, params);
+  }
+
+  // Helper for article cards (onclick): track + open in new tab
+  function trackAndOpen(eventName, location, url) {
+    track(eventName, { location: location, link_url: url });
+    window.open(url, '_blank', 'noopener');
+  }
+
+  // Delegated click listener — catches all [data-track] elements
+  document.addEventListener('click', function(e) {
+    const el = e.target.closest('[data-track]');
+    if (!el) return;
+
+    const eventName = el.dataset.track;
+    const location  = el.dataset.location || 'unknown';
+    const label     = el.dataset.label    || null;
+    const url       = el.href || null;
+
+    const params = { location };
+    if (label) params.link_label = label;
+    if (url)   params.link_url   = url;
+
+    track(eventName, params);
+  });
+
+  // ── Scroll depth ──
+  const SCROLL_MILESTONES = [25, 50, 75, 90];
+  const reached = new Set();
+
+  window.addEventListener('scroll', function() {
+    const scrolled = window.scrollY + window.innerHeight;
+    const total    = document.documentElement.scrollHeight;
+    const pct      = Math.round((scrolled / total) * 100);
+
+    SCROLL_MILESTONES.forEach(milestone => {
+      if (pct >= milestone && !reached.has(milestone)) {
+        reached.add(milestone);
+        track('scroll_depth', { percent: milestone });
+      }
+    });
+  }, { passive: true });
+
+  // ── Share popover ──
+  function handleShare() {
+    const shareData = {
+      title: "Club dell'Audiolibro",
+      text:  "Il punto di ritrovo per chi ama ascoltare. Scopri il Club dell'Audiolibro!",
+      url:   'https://clubaudiolibro.it'
+    };
+
+    if (navigator.share && /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      track('share_native_open', { method: 'web_share_api' });
+      navigator.share(shareData).catch(() => {});
+    } else if (navigator.share) {
+      track('share_native_open', { method: 'web_share_api_desktop' });
+      navigator.share(shareData).catch(() => showSharePopover());
+    } else {
+      showSharePopover();
+    }
+  }
+
+  function showSharePopover() {
+    const popover   = document.getElementById('share-popover');
+    const isVisible = popover.style.display !== 'none';
+    popover.style.display = isVisible ? 'none' : 'block';
+
+    if (!isVisible) {
+      track('share_popover_open', {});
+
+      const closeOnOutside = (e) => {
+        if (!document.getElementById('share-card').contains(e.target)) {
+          popover.style.display = 'none';
+          document.removeEventListener('click', closeOnOutside);
+        }
+      };
+      setTimeout(() => document.addEventListener('click', closeOnOutside), 0);
+
+      // Track clicks on each link inside the popover
+      popover.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', function() {
+          const dest = this.href.includes('instagram') ? 'instagram'
+                     : this.href.includes('linkedin')  ? 'linkedin'
+                     : 'website';
+          track('share_click', { share_destination: dest, location: 'share_popover' });
+        }, { once: true });
+      });
+    }
+  }
 </script>
 
 </body>
