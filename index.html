@@ -990,8 +990,9 @@
         </p>
       </article>
 
-      <article class="card reveal" style="cursor:pointer;"
-               onclick="trackAndOpen('telegram_join','card_community','https://t.me/+ej1zB0dDgyE2NWJk')">
+      <!-- TODO: quando il canale Telegram sarà creato, ripristinare l'onclick con il link corretto:
+           onclick="trackAndOpen('telegram_join','card_community','https://t.me/LINK_DA_INSERIRE')" -->
+      <article class="card reveal" style="cursor:default;">
         
         <div class="card-icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:44px;height:44px;display:block">
@@ -1024,6 +1025,8 @@
     </div>
 
     <div class="platforms-grid">
+
+      <!-- Top-left: Instagram -->
       <a href="https://www.instagram.com/clubaudiolibro/" target="_blank" rel="noopener" class="platform-link reveal"
          data-track="instagram_follow" data-location="platform_grid">
         <span class="platform-icon">
@@ -1036,18 +1039,7 @@
         <span class="platform-arrow">→</span>
       </a>
 
-      <a href="https://t.me/+ej1zB0dDgyE2NWJk" target="_blank" rel="noopener" class="platform-link reveal"
-         data-track="telegram_join" data-location="platform_grid">
-        <span class="platform-icon">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 16.7l-.4 4.3c.6 0 .85-.25 1.16-.55l2.78-2.66 5.77 4.22c1.06.58 1.81.27 2.1-.98l3.8-17.85c.34-1.55-.55-2.16-1.58-1.78L1.78 9.83c-1.5.6-1.5 1.42-.27 1.8l5.27 1.65L19.05 5.6c.58-.36 1.1-.16.67.2L9.04 16.7z"/></svg>
-        </span>
-        <span class="platform-info">
-          <span class="platform-name">Telegram</span>
-          <span class="platform-desc">Il  gruppo dove chiacchierare di audiolibri con altri appassionati</span>
-        </span>
-        <span class="platform-arrow">→</span>
-      </a>
-
+      <!-- Top-right: LinkedIn -->
       <a href="https://www.linkedin.com/company/club-dell-audiolibro/" target="_blank" rel="noopener" class="platform-link reveal"
          data-track="external_link" data-location="platform_grid" data-label="linkedin">
         <span class="platform-icon">
@@ -1060,6 +1052,7 @@
         <span class="platform-arrow">→</span>
       </a>
 
+      <!-- Bottom-left: Email -->
       <a href="mailto:info@clubaudiolibro.it" class="platform-link reveal"
          data-track="email_contact" data-location="platform_grid">
         <span class="platform-icon">
@@ -1071,6 +1064,19 @@
         </span>
         <span class="platform-arrow">→</span>
       </a>
+
+      <!-- Bottom-right: Telegram — link disabilitato in attesa della creazione del canale -->
+      <!-- TODO: quando il canale Telegram sarà creato, sostituire il <div> con un <a> e inserire href="https://t.me/LINK_DA_INSERIRE" target="_blank" rel="noopener" data-track="telegram_join" data-location="platform_grid" -->
+      <div class="platform-link reveal" style="cursor:default; opacity:0.65;">
+        <span class="platform-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 16.7l-.4 4.3c.6 0 .85-.25 1.16-.55l2.78-2.66 5.77 4.22c1.06.58 1.81.27 2.1-.98l3.8-17.85c.34-1.55-.55-2.16-1.58-1.78L1.78 9.83c-1.5.6-1.5 1.42-.27 1.8l5.27 1.65L19.05 5.6c.58-.36 1.1-.16.67.2L9.04 16.7z"/></svg>
+        </span>
+        <span class="platform-info">
+          <span class="platform-name">Telegram</span>
+          <span class="platform-desc">Il gruppo dove chiacchierare di audiolibri con altri appassionati — presto in arrivo.</span>
+        </span>
+      </div>
+
     </div>
   </div>
 </section>
